@@ -56,28 +56,6 @@ nav .nav-buttons ul li > a {
     filter: brightness(60%) blur(2px);
 }
 
-.headerimagetext h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    margin: 0 50px;
-}
-
-#Service {
-    background-color: #C2B8B8;
-}
-
-#Service h1 {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 2rem;
-}
-
 .circles {
     margin: 20px;
     display: flex;
