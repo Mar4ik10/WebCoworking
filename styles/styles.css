@@ -127,6 +127,10 @@ section#Service {
     font-size: 25px;
 }
 
+section#Prices, section#Time, section#Contacts {
+    padding: 50px 0;
+}
+
 
 section#Prices h1 {
     text-align: center;
@@ -137,7 +141,7 @@ section#Prices h1 {
 
 .price-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -222,7 +226,7 @@ section#Contacts h1 {
     padding-top: 20px;
     font-weight: bold;
     letter-spacing: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -266,4 +270,131 @@ section#Contacts h1 {
 .contact-text a:hover {
     color: #F2AF4C;
     transition: all 0.2s ease;
+}
+
+
+footer {
+    padding: 20px;
+    background-color: #E7DDDD;
+}
+
+.footer-upper-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-upper-row .footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+.footer-upper-row .footer-logo img {
+    margin-right: 20px;
+    height: 60px;
+}
+
+.footer-upper-row .footer-butons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-upper-row .footer-butons a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer-upper-row .footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-upper-row .footer-icons img {
+    width: 50px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+}
+
+section.footer-lower-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+section.footer-lower-row .footer-tel h4 {
+    font-size: 20px;
+    opacity: 0.25;
+}
+
+section.footer-lower-row .footer-numbers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+section.footer-lower-row .footer-numbers a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+section.footer-lower-row .footer-infopoint h4 {
+    font-size: 20px;
+    opacity: 0.25;
+}
+
+
+.footer-lower-row .footer-infopoint .footer-mail {
+    margin-top: 20px;
+}
+
+.footer-lower-row .footer-infopoint .footer-mail a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.footer-contacts h4 {
+    font-size: 20px;
+    opacity: 0.25;
+}
+
+
+.footer-contacts form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts form input,  .footer-contacts form textarea{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.footer-contacts form input {
+    height: 36px;
+}
+
+.footer-contacts form input[type="submit"] {
+    background-color: #FFD6A6;
+}
+
+
+.footer-rights {
+    margin: 20px 0;
+}
+
+.footer-rights u {
+    margin-right: 20px;
+    opacity: 0.3;
 }
