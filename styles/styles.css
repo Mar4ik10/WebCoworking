@@ -180,3 +180,90 @@ section#Prices h1 {
     border-radius: 20px;
     font-weight: bold;
 }
+
+section#Time {
+    background-color: #FFD2B9;
+    text-align: center;
+    overflow-x: auto;
+}
+
+section#Time h1 {
+    font-family: "Roboto serif";
+    font-size: 3rem;
+    padding-top: 20px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+section#Time table {
+    margin: 30px auto 0;
+    padding-bottom: 30px;
+    width: 80%;
+}
+
+section#Time table th {
+    background-color: #D9D9D9;
+}
+
+section#Time table th, td {
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+
+section#Contacts {
+    background-color: #FFE975;
+    
+}
+
+section#Contacts h1 {
+    font-family: "Roboto serif";
+    font-size: 3rem;
+    padding-top: 20px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.contact-place {
+    display: flex;
+    border: 1px solid;
+    padding-right: 10px;
+}
+
+.contact-place img {
+    width: 130px;
+    padding: 5px;
+}
+
+.contact-place h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-text {
+    margin: 10px;
+}
+
+.contact-geo, .contact-tel {
+    display: flex;
+    align-items: center;
+}
+
+.contact-geo a, .contact-tel a {
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.contact-text a:hover {
+    color: #F2AF4C;
+    transition: all 0.2s ease;
+}
