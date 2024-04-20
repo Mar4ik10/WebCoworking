@@ -52,6 +52,17 @@ nav .nav-buttons ul li > a {
     position: relative;
 }
 
+.headerimagetext h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
 .headerimagetext img {
     filter: brightness(60%) blur(2px);
 }
@@ -212,12 +223,14 @@ section#Contacts h1 {
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .contact-place {
     display: flex;
     border: 1px solid;
     padding-right: 10px;
+    width: 450px;
 }
 
 .contact-place img {
@@ -375,4 +388,130 @@ section.footer-lower-row .footer-infopoint h4 {
 .footer-rights u {
     margin-right: 20px;
     opacity: 0.3;
+}
+
+.footer-contacts textarea {
+    resize: none;
+}
+
+
+/**************** RESPONSIVE DESIGN ********************* */
+
+
+.nav-buttons .icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .footer-upper-row h1 {
+        font-size: 1.6rem
+    }
+
+    .footer-upper-row .footer-butons a {
+        font-size: 1.1rem;
+    }
+
+    .footer-upper-row .footer-icons img{
+        height: 30px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-place {
+        margin-bottom: 30px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    section#Service {
+        display: block;
+    }
+
+    .circles {
+        flex-direction: row;
+    }
+
+    .headerimagetext h2 {
+        width: 250px;
+        font-size: 1.5rem;
+    }
+
+    .nav-buttons li:not(:last-child) {
+        display: none;
+    }
+
+
+    .nav-buttons .icon {
+        display: block;
+    }
+
+
+    .nav-buttons.responsive {
+        position: relative;
+    }
+
+    .nav-buttons.responsive.nav-buttons ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-buttons.responsive li {
+        flex-direction: column;
+        display: block;
+        text-align: right;
+    }
+
+    .target {
+        order: -1;
+    }
+    
+    .icon {
+        width: 20px;
+        float: right;
+    }
+
+    @media screen and (max-width: 670px) {
+        .footer-upper-row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-upper-row div {
+            margin: 10px 0;
+        }
+        section.footer-lower-row {
+            flex-direction: column;
+        }
+        #Service article h1 {
+            font-size: 1.1rem;
+        }
+
+        #Service article p {
+            font-size: 0.8rem;
+        }
+        .footer-lower-row div {
+            margin: 15px 0;
+        }
+
+        .contact-row .contact-place {
+            width: 340px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        #my-nav nav div.coworking-logo h1 {
+            display: none;
+        }
+
+        section#Prices > h1 {
+            font-size: 50px;
+        }
+    }
 }

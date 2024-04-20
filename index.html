@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <style>
@@ -24,7 +28,7 @@
         font-size: 2rem;
       }
     </style>
-    <header>
+    <header id="my-nav">
       <nav>
         <div class="coworking-logo">
           <img src="images/logo.png" alt="Лого" />
@@ -36,27 +40,22 @@
             <li><a href="#Service">Сервіс</a></li>
             <li><a href="#Prices">Ціни</a></li>
             <li><a href="#Contacts">Контакти</a></li>
+            <li class="target">
+              <a
+                href="javascript:void(0);"
+                onclick="responseNav()"
+                class="icon"
+              >
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
 
       <div class="headerimagetext">
         <img src="images/image.png" alt="Фотографіяя Коворкінгу" width="100%" />
-        <h2
-          style="
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-            color: white;
-            text-align: center;
-            font-weight: 600;
-            margin: 0 50px;
-          "
-        >
-          Найкращий Робочий Простір для Вас
-        </h2>
+        <h2>Найкращий Робочий Простір для Вас</h2>
       </div>
     </header>
 
@@ -374,5 +373,16 @@
         <u>Угода користувача</u>
       </div>
     </footer>
+
+    <script>
+      function responseNav() {
+        var navbar = document.getElementById("my-nav");
+        if (navbar.className === "nav-buttons") {
+          navbar.className += " responsive";
+        } else {
+          navbar.className = "nav-buttons";
+        }
+      }
+    </script>
   </body>
 </html>
